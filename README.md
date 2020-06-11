@@ -93,7 +93,7 @@ openssl pkcs12 -name ${ALIAS} \
 - En caso de que no se almacene así, se debe especificar la ruta donde se encuentra el contenedor y el certificado. Ver el siguiente ejemplo:
 ```php
 $password = getenv('KEY_PASSWORD');
-$this->signer = new \lae\Client\Interceptor\KeyHandler(
+$this->signer = new KeyHandler(
     "/example/route/keypair.p12",
     "/example/route/cdc_cert.pem",
     $password
