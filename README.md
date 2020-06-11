@@ -93,7 +93,7 @@ openssl pkcs12 -name ${ALIAS} \
 - En caso de que no se almacene así, se debe especificar la ruta donde se encuentra el contenedor y el certificado. Ver el siguiente ejemplo:
 ```php
 $password = getenv('KEY_PASSWORD');
-$this->signer = new \lae\Client\Interceptor\KeyHandler(
+$this->signer = new KeyHandler(
     "/example/route/keypair.p12",
     "/example/route/cdc_cert.pem",
     $password
@@ -109,22 +109,21 @@ $this->signer = new \lae\Client\Interceptor\KeyHandler(
 public function setUp()
 {
     $password = getenv('KEY_PASSWORD');
-    $this->signer = new \lae\Client\Interceptor\KeyHandler(null, null, $password);
+    $this->signer = new KeyHandler(null, null, $password);
 
-    $events = new \lae\Client\Interceptor\MiddlewareEvents($this->signer);
+    $events = new MiddlewareEvents($this->signer);
     $handler = handlerStack::create();
     $handler->push($events->add_signature_header('x-signature'));   
     $handler->push($events->verify_signature_header('x-signature'));
-    $client = new \GuzzleHttp\Client(['handler' => $handler]);
+    $client = new Client(['handler' => $handler]);
 
-    $config = new \lae\Client\Configuration();
+    $config = new Configuration();
     $config->setHost('the_url');
     
-    $this->apiInstance = new \lae\Client\Api\LoanAmountEstimatorApi($client, $config);
+    $this->apiInstance = new Instance($client, $config);
     $this->x_api_key = "your_api_key";
     $this->username = "your_username";
     $this->password = "your_password";
-
 }   
  ```
  
@@ -135,27 +134,29 @@ Es importante contar con el setUp() que se encargará de firmar y verificar la p
 > **NOTA:** Los datos de la siguiente petición son solo representativos.
 
 ```php
-public function testGetLAEByFolioConsulta()
+public function testGetRC()
 {
-    $request = new \lae\Client\Model\PeticionFolioConsulta();
-    $segmento = new \lae\Client\Model\CatalogoSegmento();
 
-    $request->setFolioOtorgante("121212");
-    $request->setSegmento($segmento::PP);
-    $request->setFolioConsulta("387337601");
-    
+    $request = new \rc\pe\Client\Model\Peticion();
+
+    $request->setFolio("10000200");
+    $request->setNumeroDocumento("67544489");
+    $request->setTipoDocumento("1");
+
     try {
-        $result = $this->apiInstance->getLAEByFolioConsulta($this->x_api_key, $this->username, $this->password, $request);
-        $this->assertTrue($result!==null);
-        if($result!==null){
-            print_r("getLAEByFolioConsulta");
+        $result = $this->apiInstance->getRC($this->x_api_key, $this->username, $this->password, $request);
+        
+        if($this->apiInstance->getStatusCode() == 200){
             print_r($result);
         }
-    } catch (Exception $e) {
-        echo 'Exception when calling LAE->getLAEByFolioConsulta: ', $e->getMessage(), PHP_EOL;
-    }
-}
+    } catch (ApiException $e) {
 
+        if($e->getCode() !== 204){
+            echo ' code. Exception when calling ApiTest->getRC: ', $e->getResponseBody(), PHP_EOL;
+        }
+    }
+    $this->assertTrue($this->apiInstance->getStatusCode() == 200);
+}
 ```
 
 ## Pruebas unitarias
