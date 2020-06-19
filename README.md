@@ -26,7 +26,8 @@ Ejecutar: `composer install`
 
 - Se tiene que tener un contenedor en formato PKCS12.
 - En caso de no contar con uno, ejecutar las instrucciones contenidas en **lib/Interceptor/key_pair_gen.sh** o con los siguientes comandos.
-**opcional**: Para cifrar el contenedor, colocar una contraseña en una variable de ambiente.
+
+**Opcional**: Para cifrar el contenedor, colocar una contraseña en una variable de ambiente.
 ```sh
 export KEY_PASSWORD=your_password
 ```
