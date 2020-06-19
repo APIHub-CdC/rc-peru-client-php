@@ -5,11 +5,11 @@ namespace rc\pe\Client\Model;
 use \ArrayAccess;
 use \rc\pe\Client\ObjectSerializer;
 
-class DatosConsuta implements ModelInterface, ArrayAccess
+class DatosConsulta implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DatosConsuta';
+    protected static $rc_peModelName = 'DatosConsulta';
     
     protected static $rc_peTypes = [
         'fecha_consulta' => 'string',
