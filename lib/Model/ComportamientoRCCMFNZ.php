@@ -9,16 +9,16 @@ class ComportamientoRCCMFNZ implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ComportamientoRCC_MFNZ';
+    public static $rc_peModelName = 'ComportamientoRCC_MFNZ';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'castigos' => '\rc\pe\Client\Model\Castigos[]',
         'endeudamiento_producto_entidad' => '\rc\pe\Client\Model\EndeudamientoProductoEntidad[]',
         'comportamiento_pago' => '\rc\pe\Client\Model\ComportamientoPago[]',
         'comportamiento_uso_tarjeta' => '\rc\pe\Client\Model\ComportamientoUsoTarjeta[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'castigos' => null,
         'endeudamiento_producto_entidad' => null,
         'comportamiento_pago' => null,
@@ -35,21 +35,21 @@ class ComportamientoRCCMFNZ implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'castigos' => 'castigos',
         'endeudamiento_producto_entidad' => 'endeudamientoProductoEntidad',
         'comportamiento_pago' => 'comportamientoPago',
         'comportamiento_uso_tarjeta' => 'comportamientoUsoTarjeta'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'castigos' => 'setCastigos',
         'endeudamiento_producto_entidad' => 'setEndeudamientoProductoEntidad',
         'comportamiento_pago' => 'setComportamientoPago',
         'comportamiento_uso_tarjeta' => 'setComportamientoUsoTarjeta'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'castigos' => 'getCastigos',
         'endeudamiento_producto_entidad' => 'getEndeudamientoProductoEntidad',
         'comportamiento_pago' => 'getComportamientoPago',
@@ -78,7 +78,7 @@ class ComportamientoRCCMFNZ implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

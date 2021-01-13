@@ -9,9 +9,9 @@ class InformacionEntidad24 implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'InformacionEntidad24';
+    public static $rc_peModelName = 'InformacionEntidad24';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'descripcion_entidad' => 'string',
         'clave_situacion' => 'string',
         'id_calificacion' => 'string',
@@ -23,7 +23,7 @@ class InformacionEntidad24 implements ModelInterface, ArrayAccess
         'atrasos24' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'descripcion_entidad' => null,
         'clave_situacion' => null,
         'id_calificacion' => null,
@@ -45,7 +45,7 @@ class InformacionEntidad24 implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'descripcion_entidad' => 'descripcionEntidad',
         'clave_situacion' => 'claveSituacion',
         'id_calificacion' => 'idCalificacion',
@@ -57,7 +57,7 @@ class InformacionEntidad24 implements ModelInterface, ArrayAccess
         'atrasos24' => 'atrasos24'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'descripcion_entidad' => 'setDescripcionEntidad',
         'clave_situacion' => 'setClaveSituacion',
         'id_calificacion' => 'setIdCalificacion',
@@ -69,7 +69,7 @@ class InformacionEntidad24 implements ModelInterface, ArrayAccess
         'atrasos24' => 'setAtrasos24'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'descripcion_entidad' => 'getDescripcionEntidad',
         'clave_situacion' => 'getClaveSituacion',
         'id_calificacion' => 'getIdCalificacion',
@@ -103,7 +103,7 @@ class InformacionEntidad24 implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,9 +9,9 @@ class Respuesta implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Respuesta';
+    public static $rc_peModelName = 'Respuesta';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'datos_consulta' => '\rc\pe\Client\Model\DatosConsulta',
         'resumen_credito' => '\rc\pe\Client\Model\ResumenCredito',
         'comportamiento_rcc_mfnz' => '\rc\pe\Client\Model\ComportamientoRCCMFNZ',
@@ -22,7 +22,7 @@ class Respuesta implements ModelInterface, ArrayAccess
         'datos_generales' => '\rc\pe\Client\Model\DatosGenerales'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'datos_consulta' => null,
         'resumen_credito' => null,
         'comportamiento_rcc_mfnz' => null,
@@ -43,7 +43,7 @@ class Respuesta implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'datos_consulta' => 'datosConsulta',
         'resumen_credito' => 'resumenCredito',
         'comportamiento_rcc_mfnz' => 'comportamientoRCC_MFNZ',
@@ -54,7 +54,7 @@ class Respuesta implements ModelInterface, ArrayAccess
         'datos_generales' => 'datosGenerales'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'datos_consulta' => 'setDatosConsulta',
         'resumen_credito' => 'setResumenCredito',
         'comportamiento_rcc_mfnz' => 'setComportamientoRccMfnz',
@@ -65,7 +65,7 @@ class Respuesta implements ModelInterface, ArrayAccess
         'datos_generales' => 'setDatosGenerales'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'datos_consulta' => 'getDatosConsulta',
         'resumen_credito' => 'getResumenCredito',
         'comportamiento_rcc_mfnz' => 'getComportamientoRccMfnz',
@@ -98,7 +98,7 @@ class Respuesta implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

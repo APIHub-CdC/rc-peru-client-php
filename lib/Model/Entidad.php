@@ -9,14 +9,14 @@ class Entidad implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Entidad';
+    public static $rc_peModelName = 'Entidad';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'descripcion_entidad' => 'string',
         'detalle_entidad' => '\rc\pe\Client\Model\DetalleEntidad[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'descripcion_entidad' => null,
         'detalle_entidad' => null
     ];
@@ -31,17 +31,17 @@ class Entidad implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'descripcion_entidad' => 'descripcionEntidad',
         'detalle_entidad' => 'detalleEntidad'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'descripcion_entidad' => 'setDescripcionEntidad',
         'detalle_entidad' => 'setDetalleEntidad'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'descripcion_entidad' => 'getDescripcionEntidad',
         'detalle_entidad' => 'getDetalleEntidad'
     ];
@@ -68,7 +68,7 @@ class Entidad implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,14 +9,14 @@ class Error implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Error';
+    public static $rc_peModelName = 'Error';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'codigo' => 'string',
         'mensaje' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'codigo' => null,
         'mensaje' => null
     ];
@@ -31,17 +31,17 @@ class Error implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'codigo' => 'codigo',
         'mensaje' => 'mensaje'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'codigo' => 'setCodigo',
         'mensaje' => 'setMensaje'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'codigo' => 'getCodigo',
         'mensaje' => 'getMensaje'
     ];
@@ -68,7 +68,7 @@ class Error implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

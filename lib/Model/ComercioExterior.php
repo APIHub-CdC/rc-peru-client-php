@@ -9,14 +9,14 @@ class ComercioExterior implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ComercioExterior';
+    public static $rc_peModelName = 'ComercioExterior';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'exportaciones' => '\rc\pe\Client\Model\Exportaciones[]',
         'importaciones' => '\rc\pe\Client\Model\Importaciones[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'exportaciones' => null,
         'importaciones' => null
     ];
@@ -31,17 +31,17 @@ class ComercioExterior implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'exportaciones' => 'exportaciones',
         'importaciones' => 'importaciones'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'exportaciones' => 'setExportaciones',
         'importaciones' => 'setImportaciones'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'exportaciones' => 'getExportaciones',
         'importaciones' => 'getImportaciones'
     ];
@@ -68,7 +68,7 @@ class ComercioExterior implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

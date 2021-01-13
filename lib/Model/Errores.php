@@ -9,13 +9,13 @@ class Errores implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Errores';
+    public static $rc_peModelName = 'Errores';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'errores' => '\rc\pe\Client\Model\Error[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'errores' => null
     ];
     
@@ -29,15 +29,15 @@ class Errores implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'errores' => 'Errores'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'errores' => 'setErrores'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'errores' => 'getErrores'
     ];
     
@@ -63,7 +63,7 @@ class Errores implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

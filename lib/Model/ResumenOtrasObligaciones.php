@@ -9,14 +9,14 @@ class ResumenOtrasObligaciones implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ResumenOtrasObligaciones';
+    public static $rc_peModelName = 'ResumenOtrasObligaciones';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_fuente' => 'string',
         'info_fuente_informacion' => '\rc\pe\Client\Model\ResumenOtrasObligacionesInfoFuenteInformacion'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_fuente' => null,
         'info_fuente_informacion' => null
     ];
@@ -31,17 +31,17 @@ class ResumenOtrasObligaciones implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_fuente' => 'claveFuente',
         'info_fuente_informacion' => 'infoFuenteInformacion'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_fuente' => 'setClaveFuente',
         'info_fuente_informacion' => 'setInfoFuenteInformacion'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_fuente' => 'getClaveFuente',
         'info_fuente_informacion' => 'getInfoFuenteInformacion'
     ];
@@ -68,7 +68,7 @@ class ResumenOtrasObligaciones implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

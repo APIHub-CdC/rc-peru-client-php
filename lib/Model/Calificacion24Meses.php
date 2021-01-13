@@ -9,9 +9,9 @@ class Calificacion24Meses implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Calificacion24Meses';
+    public static $rc_peModelName = 'Calificacion24Meses';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'fecha_periodo' => 'string',
         'deuda_normal' => 'float',
         'deuda_cpp' => 'float',
@@ -21,7 +21,7 @@ class Calificacion24Meses implements ModelInterface, ArrayAccess
         'numero_entidades' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'fecha_periodo' => null,
         'deuda_normal' => 'float',
         'deuda_cpp' => 'float',
@@ -41,7 +41,7 @@ class Calificacion24Meses implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'fecha_periodo' => 'fechaPeriodo',
         'deuda_normal' => 'deudaNormal',
         'deuda_cpp' => 'deudaCPP',
@@ -51,7 +51,7 @@ class Calificacion24Meses implements ModelInterface, ArrayAccess
         'numero_entidades' => 'numeroEntidades'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'fecha_periodo' => 'setFechaPeriodo',
         'deuda_normal' => 'setDeudaNormal',
         'deuda_cpp' => 'setDeudaCpp',
@@ -61,7 +61,7 @@ class Calificacion24Meses implements ModelInterface, ArrayAccess
         'numero_entidades' => 'setNumeroEntidades'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'fecha_periodo' => 'getFechaPeriodo',
         'deuda_normal' => 'getDeudaNormal',
         'deuda_cpp' => 'getDeudaCpp',
@@ -93,7 +93,7 @@ class Calificacion24Meses implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,9 +9,9 @@ class DatosConsulta implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DatosConsulta';
+    public static $rc_peModelName = 'DatosConsulta';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'fecha_consulta' => 'string',
         'numero_consulta' => 'float',
         'otorgante' => 'string',
@@ -19,7 +19,7 @@ class DatosConsulta implements ModelInterface, ArrayAccess
         'tipo_cambio' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'fecha_consulta' => null,
         'numero_consulta' => null,
         'otorgante' => null,
@@ -37,7 +37,7 @@ class DatosConsulta implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'fecha_consulta' => 'fechaConsulta',
         'numero_consulta' => 'numeroConsulta',
         'otorgante' => 'otorgante',
@@ -45,7 +45,7 @@ class DatosConsulta implements ModelInterface, ArrayAccess
         'tipo_cambio' => 'tipoCambio'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'fecha_consulta' => 'setFechaConsulta',
         'numero_consulta' => 'setNumeroConsulta',
         'otorgante' => 'setOtorgante',
@@ -53,7 +53,7 @@ class DatosConsulta implements ModelInterface, ArrayAccess
         'tipo_cambio' => 'setTipoCambio'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'fecha_consulta' => 'getFechaConsulta',
         'numero_consulta' => 'getNumeroConsulta',
         'otorgante' => 'getOtorgante',
@@ -83,7 +83,7 @@ class DatosConsulta implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

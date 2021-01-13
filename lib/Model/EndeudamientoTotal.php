@@ -9,15 +9,15 @@ class EndeudamientoTotal implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'EndeudamientoTotal';
+    public static $rc_peModelName = 'EndeudamientoTotal';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_concepto' => 'string',
         'monto' => 'float',
         'porcentaje' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_concepto' => null,
         'monto' => 'float',
         'porcentaje' => 'float'
@@ -33,19 +33,19 @@ class EndeudamientoTotal implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_concepto' => 'claveConcepto',
         'monto' => 'monto',
         'porcentaje' => 'porcentaje'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_concepto' => 'setClaveConcepto',
         'monto' => 'setMonto',
         'porcentaje' => 'setPorcentaje'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_concepto' => 'getClaveConcepto',
         'monto' => 'getMonto',
         'porcentaje' => 'getPorcentaje'
@@ -73,7 +73,7 @@ class EndeudamientoTotal implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

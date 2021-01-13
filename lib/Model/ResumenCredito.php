@@ -9,9 +9,9 @@ class ResumenCredito implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ResumenCredito';
+    public static $rc_peModelName = 'ResumenCredito';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'endeudamiento_total' => '\rc\pe\Client\Model\EndeudamientoTotal[]',
         'deuda_tipo_producto_rc' => '\rc\pe\Client\Model\DeudaTipoProductoRC[]',
         'detalle_producto' => '\rc\pe\Client\Model\DetalleProducto[]',
@@ -20,7 +20,7 @@ class ResumenCredito implements ModelInterface, ArrayAccess
         'sbs_ultimos24_meses' => '\rc\pe\Client\Model\ResumenCreditoSBSUltimos24Meses'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'endeudamiento_total' => null,
         'deuda_tipo_producto_rc' => null,
         'detalle_producto' => null,
@@ -39,7 +39,7 @@ class ResumenCredito implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'endeudamiento_total' => 'endeudamientoTotal',
         'deuda_tipo_producto_rc' => 'deudaTipoProductoRC',
         'detalle_producto' => 'detalleProducto',
@@ -48,7 +48,7 @@ class ResumenCredito implements ModelInterface, ArrayAccess
         'sbs_ultimos24_meses' => 'SBSUltimos24Meses'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'endeudamiento_total' => 'setEndeudamientoTotal',
         'deuda_tipo_producto_rc' => 'setDeudaTipoProductoRc',
         'detalle_producto' => 'setDetalleProducto',
@@ -57,7 +57,7 @@ class ResumenCredito implements ModelInterface, ArrayAccess
         'sbs_ultimos24_meses' => 'setSbsUltimos24Meses'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'endeudamiento_total' => 'getEndeudamientoTotal',
         'deuda_tipo_producto_rc' => 'getDeudaTipoProductoRc',
         'detalle_producto' => 'getDetalleProducto',
@@ -88,7 +88,7 @@ class ResumenCredito implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

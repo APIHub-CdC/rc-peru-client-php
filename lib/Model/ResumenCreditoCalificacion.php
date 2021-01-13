@@ -9,14 +9,14 @@ class ResumenCreditoCalificacion implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ResumenCredito_calificacion';
+    public static $rc_peModelName = 'ResumenCredito_calificacion';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'periodo' => 'string',
         'detalle' => '\rc\pe\Client\Model\DetalleCalificacion[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'periodo' => null,
         'detalle' => null
     ];
@@ -31,17 +31,17 @@ class ResumenCreditoCalificacion implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'periodo' => 'periodo',
         'detalle' => 'detalle'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'periodo' => 'setPeriodo',
         'detalle' => 'setDetalle'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'periodo' => 'getPeriodo',
         'detalle' => 'getDetalle'
     ];
@@ -68,7 +68,7 @@ class ResumenCreditoCalificacion implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

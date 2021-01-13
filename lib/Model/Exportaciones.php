@@ -9,14 +9,14 @@ class Exportaciones implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Exportaciones';
+    public static $rc_peModelName = 'Exportaciones';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'periodo' => 'string',
         'monto' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'periodo' => null,
         'monto' => 'float'
     ];
@@ -31,17 +31,17 @@ class Exportaciones implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'periodo' => 'periodo',
         'monto' => 'monto'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'periodo' => 'setPeriodo',
         'monto' => 'setMonto'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'periodo' => 'getPeriodo',
         'monto' => 'getMonto'
     ];
@@ -68,7 +68,7 @@ class Exportaciones implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

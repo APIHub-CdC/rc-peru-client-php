@@ -9,16 +9,16 @@ class Condicion24Meses implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Condicion24Meses';
+    public static $rc_peModelName = 'Condicion24Meses';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'fecha_periodo' => 'string',
         'deuda_morosa' => 'float',
         'deuda_al_dia' => 'float',
         'peor_calificacion' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'fecha_periodo' => null,
         'deuda_morosa' => 'float',
         'deuda_al_dia' => 'float',
@@ -35,21 +35,21 @@ class Condicion24Meses implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'fecha_periodo' => 'fechaPeriodo',
         'deuda_morosa' => 'deudaMorosa',
         'deuda_al_dia' => 'deudaAlDia',
         'peor_calificacion' => 'peorCalificacion'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'fecha_periodo' => 'setFechaPeriodo',
         'deuda_morosa' => 'setDeudaMorosa',
         'deuda_al_dia' => 'setDeudaAlDia',
         'peor_calificacion' => 'setPeorCalificacion'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'fecha_periodo' => 'getFechaPeriodo',
         'deuda_morosa' => 'getDeudaMorosa',
         'deuda_al_dia' => 'getDeudaAlDia',
@@ -78,7 +78,7 @@ class Condicion24Meses implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

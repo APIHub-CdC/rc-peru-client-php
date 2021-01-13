@@ -9,9 +9,9 @@ class ResumenOtrasObligacionesInfoFuenteInformacion implements ModelInterface, A
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ResumenOtrasObligaciones_infoFuenteInformacion';
+    public static $rc_peModelName = 'ResumenOtrasObligaciones_infoFuenteInformacion';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_situacion' => 'string',
         'obligaciones' => 'float',
         'monto' => 'float',
@@ -21,7 +21,7 @@ class ResumenOtrasObligacionesInfoFuenteInformacion implements ModelInterface, A
         'monto24_meses' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_situacion' => null,
         'obligaciones' => null,
         'monto' => 'float',
@@ -41,7 +41,7 @@ class ResumenOtrasObligacionesInfoFuenteInformacion implements ModelInterface, A
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_situacion' => 'claveSituacion',
         'obligaciones' => 'obligaciones',
         'monto' => 'monto',
@@ -51,7 +51,7 @@ class ResumenOtrasObligacionesInfoFuenteInformacion implements ModelInterface, A
         'monto24_meses' => 'monto24Meses'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_situacion' => 'setClaveSituacion',
         'obligaciones' => 'setObligaciones',
         'monto' => 'setMonto',
@@ -61,7 +61,7 @@ class ResumenOtrasObligacionesInfoFuenteInformacion implements ModelInterface, A
         'monto24_meses' => 'setMonto24Meses'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_situacion' => 'getClaveSituacion',
         'obligaciones' => 'getObligaciones',
         'monto' => 'getMonto',
@@ -93,7 +93,7 @@ class ResumenOtrasObligacionesInfoFuenteInformacion implements ModelInterface, A
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

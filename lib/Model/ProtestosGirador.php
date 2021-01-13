@@ -9,9 +9,9 @@ class ProtestosGirador implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ProtestosGirador';
+    public static $rc_peModelName = 'ProtestosGirador';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'nombre_aceptante' => 'string',
         'segundo_nombre_aceptante' => 'string',
         'apellido_paterno_aceptante' => 'string',
@@ -23,7 +23,7 @@ class ProtestosGirador implements ModelInterface, ArrayAccess
         'clave_tipo_valor' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'nombre_aceptante' => null,
         'segundo_nombre_aceptante' => null,
         'apellido_paterno_aceptante' => null,
@@ -45,7 +45,7 @@ class ProtestosGirador implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'nombre_aceptante' => 'nombreAceptante',
         'segundo_nombre_aceptante' => 'segundoNombreAceptante',
         'apellido_paterno_aceptante' => 'apellidoPaternoAceptante',
@@ -57,7 +57,7 @@ class ProtestosGirador implements ModelInterface, ArrayAccess
         'clave_tipo_valor' => 'claveTipoValor'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'nombre_aceptante' => 'setNombreAceptante',
         'segundo_nombre_aceptante' => 'setSegundoNombreAceptante',
         'apellido_paterno_aceptante' => 'setApellidoPaternoAceptante',
@@ -69,7 +69,7 @@ class ProtestosGirador implements ModelInterface, ArrayAccess
         'clave_tipo_valor' => 'setClaveTipoValor'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'nombre_aceptante' => 'getNombreAceptante',
         'segundo_nombre_aceptante' => 'getSegundoNombreAceptante',
         'apellido_paterno_aceptante' => 'getApellidoPaternoAceptante',
@@ -103,7 +103,7 @@ class ProtestosGirador implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {
