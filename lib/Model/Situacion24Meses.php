@@ -9,9 +9,9 @@ class Situacion24Meses implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Situacion24Meses';
+    public static $rc_peModelName = 'Situacion24Meses';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'fecha_periodo' => 'string',
         'deuda_vencida' => 'float',
         'deuda_vigente' => 'float',
@@ -20,7 +20,7 @@ class Situacion24Meses implements ModelInterface, ArrayAccess
         'deuda_castigo' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'fecha_periodo' => null,
         'deuda_vencida' => 'float',
         'deuda_vigente' => 'float',
@@ -39,7 +39,7 @@ class Situacion24Meses implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'fecha_periodo' => 'fechaPeriodo',
         'deuda_vencida' => 'deudaVencida',
         'deuda_vigente' => 'deudaVigente',
@@ -48,7 +48,7 @@ class Situacion24Meses implements ModelInterface, ArrayAccess
         'deuda_castigo' => 'deudaCastigo'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'fecha_periodo' => 'setFechaPeriodo',
         'deuda_vencida' => 'setDeudaVencida',
         'deuda_vigente' => 'setDeudaVigente',
@@ -57,7 +57,7 @@ class Situacion24Meses implements ModelInterface, ArrayAccess
         'deuda_castigo' => 'setDeudaCastigo'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'fecha_periodo' => 'getFechaPeriodo',
         'deuda_vencida' => 'getDeudaVencida',
         'deuda_vigente' => 'getDeudaVigente',
@@ -88,7 +88,7 @@ class Situacion24Meses implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,9 +9,9 @@ class DatasGeneralesSunat implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DatasGeneralesSunat';
+    public static $rc_peModelName = 'DatasGeneralesSunat';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'nombre_comercial' => 'string',
         'clave_ciiu' => 'string',
         'fecha_inicio_actividades' => 'string',
@@ -23,7 +23,7 @@ class DatasGeneralesSunat implements ModelInterface, ArrayAccess
         'fecha_actividad_comercio_exterior' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'nombre_comercial' => null,
         'clave_ciiu' => null,
         'fecha_inicio_actividades' => null,
@@ -45,7 +45,7 @@ class DatasGeneralesSunat implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'nombre_comercial' => 'nombreComercial',
         'clave_ciiu' => 'claveCiiu',
         'fecha_inicio_actividades' => 'fechaInicioActividades',
@@ -57,7 +57,7 @@ class DatasGeneralesSunat implements ModelInterface, ArrayAccess
         'fecha_actividad_comercio_exterior' => 'fechaActividadComercioExterior'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'nombre_comercial' => 'setNombreComercial',
         'clave_ciiu' => 'setClaveCiiu',
         'fecha_inicio_actividades' => 'setFechaInicioActividades',
@@ -69,7 +69,7 @@ class DatasGeneralesSunat implements ModelInterface, ArrayAccess
         'fecha_actividad_comercio_exterior' => 'setFechaActividadComercioExterior'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'nombre_comercial' => 'getNombreComercial',
         'clave_ciiu' => 'getClaveCiiu',
         'fecha_inicio_actividades' => 'getFechaInicioActividades',
@@ -103,7 +103,7 @@ class DatasGeneralesSunat implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

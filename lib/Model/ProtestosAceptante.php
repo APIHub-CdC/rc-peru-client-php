@@ -9,9 +9,9 @@ class ProtestosAceptante implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ProtestosAceptante';
+    public static $rc_peModelName = 'ProtestosAceptante';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_tipo_valor' => 'string',
         'fecha_protesto' => 'string',
         'clave_situacion' => 'string',
@@ -20,7 +20,7 @@ class ProtestosAceptante implements ModelInterface, ArrayAccess
         'nombre_girador' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_tipo_valor' => null,
         'fecha_protesto' => null,
         'clave_situacion' => null,
@@ -39,7 +39,7 @@ class ProtestosAceptante implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_tipo_valor' => 'claveTipoValor',
         'fecha_protesto' => 'fechaProtesto',
         'clave_situacion' => 'claveSituacion',
@@ -48,7 +48,7 @@ class ProtestosAceptante implements ModelInterface, ArrayAccess
         'nombre_girador' => 'nombreGirador'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_tipo_valor' => 'setClaveTipoValor',
         'fecha_protesto' => 'setFechaProtesto',
         'clave_situacion' => 'setClaveSituacion',
@@ -57,7 +57,7 @@ class ProtestosAceptante implements ModelInterface, ArrayAccess
         'nombre_girador' => 'setNombreGirador'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_tipo_valor' => 'getClaveTipoValor',
         'fecha_protesto' => 'getFechaProtesto',
         'clave_situacion' => 'getClaveSituacion',
@@ -88,7 +88,7 @@ class ProtestosAceptante implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

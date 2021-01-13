@@ -9,9 +9,9 @@ class DeudaTipoProductoRC implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DeudaTipoProductoRC';
+    public static $rc_peModelName = 'DeudaTipoProductoRC';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_concepto' => 'string',
         'monto_dia' => 'float',
         'monto_morosa' => 'float',
@@ -21,7 +21,7 @@ class DeudaTipoProductoRC implements ModelInterface, ArrayAccess
         'porcentaje_total' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_concepto' => null,
         'monto_dia' => 'float',
         'monto_morosa' => 'float',
@@ -41,7 +41,7 @@ class DeudaTipoProductoRC implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_concepto' => 'claveConcepto',
         'monto_dia' => 'montoDia',
         'monto_morosa' => 'montoMorosa',
@@ -51,7 +51,7 @@ class DeudaTipoProductoRC implements ModelInterface, ArrayAccess
         'porcentaje_total' => 'porcentajeTotal'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_concepto' => 'setClaveConcepto',
         'monto_dia' => 'setMontoDia',
         'monto_morosa' => 'setMontoMorosa',
@@ -61,7 +61,7 @@ class DeudaTipoProductoRC implements ModelInterface, ArrayAccess
         'porcentaje_total' => 'setPorcentajeTotal'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_concepto' => 'getClaveConcepto',
         'monto_dia' => 'getMontoDia',
         'monto_morosa' => 'getMontoMorosa',
@@ -93,7 +93,7 @@ class DeudaTipoProductoRC implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

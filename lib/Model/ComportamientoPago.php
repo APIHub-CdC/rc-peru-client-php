@@ -9,14 +9,14 @@ class ComportamientoPago implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ComportamientoPago';
+    public static $rc_peModelName = 'ComportamientoPago';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_producto' => 'string',
         'informacion_entidad24' => '\rc\pe\Client\Model\InformacionEntidad24[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_producto' => null,
         'informacion_entidad24' => null
     ];
@@ -31,17 +31,17 @@ class ComportamientoPago implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_producto' => 'claveProducto',
         'informacion_entidad24' => 'informacionEntidad24'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_producto' => 'setClaveProducto',
         'informacion_entidad24' => 'setInformacionEntidad24'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_producto' => 'getClaveProducto',
         'informacion_entidad24' => 'getInformacionEntidad24'
     ];
@@ -68,7 +68,7 @@ class ComportamientoPago implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

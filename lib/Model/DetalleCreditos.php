@@ -9,15 +9,15 @@ class DetalleCreditos implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleCreditos';
+    public static $rc_peModelName = 'DetalleCreditos';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'detalle_creditos_rcc' => '\rc\pe\Client\Model\DetalleCreditosRCC[]',
         'detalle_creditos_mfnz' => '\rc\pe\Client\Model\DetalleCreditosMFNZ[]',
         'avalistas_avalados' => '\rc\pe\Client\Model\DetalleCreditosAvalistasAvalados'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'detalle_creditos_rcc' => null,
         'detalle_creditos_mfnz' => null,
         'avalistas_avalados' => null
@@ -33,19 +33,19 @@ class DetalleCreditos implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'detalle_creditos_rcc' => 'detalleCreditosRCC',
         'detalle_creditos_mfnz' => 'detalleCreditosMFNZ',
         'avalistas_avalados' => 'avalistasAvalados'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'detalle_creditos_rcc' => 'setDetalleCreditosRcc',
         'detalle_creditos_mfnz' => 'setDetalleCreditosMfnz',
         'avalistas_avalados' => 'setAvalistasAvalados'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'detalle_creditos_rcc' => 'getDetalleCreditosRcc',
         'detalle_creditos_mfnz' => 'getDetalleCreditosMfnz',
         'avalistas_avalados' => 'getAvalistasAvalados'
@@ -73,7 +73,7 @@ class DetalleCreditos implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

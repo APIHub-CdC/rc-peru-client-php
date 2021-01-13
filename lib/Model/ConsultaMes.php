@@ -9,14 +9,14 @@ class ConsultaMes implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ConsultaMes';
+    public static $rc_peModelName = 'ConsultaMes';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'periodo' => 'string',
         'consultas' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'periodo' => null,
         'consultas' => null
     ];
@@ -31,17 +31,17 @@ class ConsultaMes implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'periodo' => 'periodo',
         'consultas' => 'consultas'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'periodo' => 'setPeriodo',
         'consultas' => 'setConsultas'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'periodo' => 'getPeriodo',
         'consultas' => 'getConsultas'
     ];
@@ -68,7 +68,7 @@ class ConsultaMes implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

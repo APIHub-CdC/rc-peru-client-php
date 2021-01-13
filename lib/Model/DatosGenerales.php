@@ -9,9 +9,9 @@ class DatosGenerales implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DatosGenerales';
+    public static $rc_peModelName = 'DatosGenerales';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'datos_personales' => '\rc\pe\Client\Model\DatosPersonales',
         'datos_generales_sunat' => '\rc\pe\Client\Model\DatasGeneralesSunat',
         'representantes' => '\rc\pe\Client\Model\Representantes[]',
@@ -19,7 +19,7 @@ class DatosGenerales implements ModelInterface, ArrayAccess
         'telefonos' => '\rc\pe\Client\Model\Telefono[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'datos_personales' => null,
         'datos_generales_sunat' => null,
         'representantes' => null,
@@ -37,7 +37,7 @@ class DatosGenerales implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'datos_personales' => 'datosPersonales',
         'datos_generales_sunat' => 'datosGeneralesSunat',
         'representantes' => 'representantes',
@@ -45,7 +45,7 @@ class DatosGenerales implements ModelInterface, ArrayAccess
         'telefonos' => 'telefonos'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'datos_personales' => 'setDatosPersonales',
         'datos_generales_sunat' => 'setDatosGeneralesSunat',
         'representantes' => 'setRepresentantes',
@@ -53,7 +53,7 @@ class DatosGenerales implements ModelInterface, ArrayAccess
         'telefonos' => 'setTelefonos'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'datos_personales' => 'getDatosPersonales',
         'datos_generales_sunat' => 'getDatosGeneralesSunat',
         'representantes' => 'getRepresentantes',
@@ -83,7 +83,7 @@ class DatosGenerales implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,14 +9,14 @@ class DetalleCreditosAvalistasAvalados implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleCreditos_avalistasAvalados';
+    public static $rc_peModelName = 'DetalleCreditos_avalistasAvalados';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'detalles_avalistas' => '\rc\pe\Client\Model\DetalleAvalistas[]',
         'detalles_avalados' => '\rc\pe\Client\Model\DetalleAvalados[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'detalles_avalistas' => null,
         'detalles_avalados' => null
     ];
@@ -31,17 +31,17 @@ class DetalleCreditosAvalistasAvalados implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'detalles_avalistas' => 'detallesAvalistas',
         'detalles_avalados' => 'detallesAvalados'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'detalles_avalistas' => 'setDetallesAvalistas',
         'detalles_avalados' => 'setDetallesAvalados'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'detalles_avalistas' => 'getDetallesAvalistas',
         'detalles_avalados' => 'getDetallesAvalados'
     ];
@@ -68,7 +68,7 @@ class DetalleCreditosAvalistasAvalados implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

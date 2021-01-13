@@ -9,9 +9,9 @@ class DetalleProducto implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleProducto';
+    public static $rc_peModelName = 'DetalleProducto';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_producto' => 'string',
         'clave_tipo_producto' => 'string',
         'id_calificacion' => 'string',
@@ -35,7 +35,7 @@ class DetalleProducto implements ModelInterface, ArrayAccess
         'linea_credito' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_producto' => null,
         'clave_tipo_producto' => null,
         'id_calificacion' => null,
@@ -69,7 +69,7 @@ class DetalleProducto implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_producto' => 'claveProducto',
         'clave_tipo_producto' => 'claveTipoProducto',
         'id_calificacion' => 'idCalificacion',
@@ -93,7 +93,7 @@ class DetalleProducto implements ModelInterface, ArrayAccess
         'linea_credito' => 'lineaCredito'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_producto' => 'setClaveProducto',
         'clave_tipo_producto' => 'setClaveTipoProducto',
         'id_calificacion' => 'setIdCalificacion',
@@ -117,7 +117,7 @@ class DetalleProducto implements ModelInterface, ArrayAccess
         'linea_credito' => 'setLineaCredito'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_producto' => 'getClaveProducto',
         'clave_tipo_producto' => 'getClaveTipoProducto',
         'id_calificacion' => 'getIdCalificacion',
@@ -163,7 +163,7 @@ class DetalleProducto implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

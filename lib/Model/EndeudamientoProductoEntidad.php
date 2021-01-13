@@ -9,14 +9,14 @@ class EndeudamientoProductoEntidad implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'EndeudamientoProductoEntidad';
+    public static $rc_peModelName = 'EndeudamientoProductoEntidad';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_producto' => 'string',
         'informacion_entidad' => '\rc\pe\Client\Model\InformacionEntidad[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_producto' => null,
         'informacion_entidad' => null
     ];
@@ -31,17 +31,17 @@ class EndeudamientoProductoEntidad implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_producto' => 'claveProducto',
         'informacion_entidad' => 'informacionEntidad'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_producto' => 'setClaveProducto',
         'informacion_entidad' => 'setInformacionEntidad'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_producto' => 'getClaveProducto',
         'informacion_entidad' => 'getInformacionEntidad'
     ];
@@ -68,7 +68,7 @@ class EndeudamientoProductoEntidad implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

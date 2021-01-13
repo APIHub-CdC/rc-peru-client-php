@@ -9,9 +9,9 @@ class OtrasObligaciones implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'OtrasObligaciones';
+    public static $rc_peModelName = 'OtrasObligaciones';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'resumen_otras_obligaciones' => '\rc\pe\Client\Model\ResumenOtrasObligaciones[]',
         'deudores_omisos' => '\rc\pe\Client\Model\DeudoresOmisos[]',
         'deudas_afp' => '\rc\pe\Client\Model\DeudasAFP[]',
@@ -20,7 +20,7 @@ class OtrasObligaciones implements ModelInterface, ArrayAccess
         'protestos_girador' => '\rc\pe\Client\Model\ProtestosGirador[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'resumen_otras_obligaciones' => null,
         'deudores_omisos' => null,
         'deudas_afp' => null,
@@ -39,7 +39,7 @@ class OtrasObligaciones implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'resumen_otras_obligaciones' => 'resumenOtrasObligaciones',
         'deudores_omisos' => 'deudoresOmisos',
         'deudas_afp' => 'deudasAFP',
@@ -48,7 +48,7 @@ class OtrasObligaciones implements ModelInterface, ArrayAccess
         'protestos_girador' => 'protestosGirador'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'resumen_otras_obligaciones' => 'setResumenOtrasObligaciones',
         'deudores_omisos' => 'setDeudoresOmisos',
         'deudas_afp' => 'setDeudasAfp',
@@ -57,7 +57,7 @@ class OtrasObligaciones implements ModelInterface, ArrayAccess
         'protestos_girador' => 'setProtestosGirador'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'resumen_otras_obligaciones' => 'getResumenOtrasObligaciones',
         'deudores_omisos' => 'getDeudoresOmisos',
         'deudas_afp' => 'getDeudasAfp',
@@ -88,7 +88,7 @@ class OtrasObligaciones implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

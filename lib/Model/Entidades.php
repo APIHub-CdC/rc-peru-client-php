@@ -9,9 +9,9 @@ class Entidades implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Entidades';
+    public static $rc_peModelName = 'Entidades';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'nombre_entidad' => 'string',
         'id_calificacion' => 'string',
         'porcentaje_calificacion' => 'float',
@@ -24,7 +24,7 @@ class Entidades implements ModelInterface, ArrayAccess
         'detalle_provisiones' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'nombre_entidad' => null,
         'id_calificacion' => null,
         'porcentaje_calificacion' => 'float',
@@ -47,7 +47,7 @@ class Entidades implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'nombre_entidad' => 'nombreEntidad',
         'id_calificacion' => 'idCalificacion',
         'porcentaje_calificacion' => 'porcentajeCalificacion',
@@ -60,7 +60,7 @@ class Entidades implements ModelInterface, ArrayAccess
         'detalle_provisiones' => 'detalleProvisiones'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'nombre_entidad' => 'setNombreEntidad',
         'id_calificacion' => 'setIdCalificacion',
         'porcentaje_calificacion' => 'setPorcentajeCalificacion',
@@ -73,7 +73,7 @@ class Entidades implements ModelInterface, ArrayAccess
         'detalle_provisiones' => 'setDetalleProvisiones'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'nombre_entidad' => 'getNombreEntidad',
         'id_calificacion' => 'getIdCalificacion',
         'porcentaje_calificacion' => 'getPorcentajeCalificacion',
@@ -108,7 +108,7 @@ class Entidades implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,9 +9,9 @@ class InformacionEntidad implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'InformacionEntidad';
+    public static $rc_peModelName = 'InformacionEntidad';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'descripcion_entidad' => 'string',
         'clave_situacion' => 'string',
         'antiguedad' => 'float',
@@ -23,7 +23,7 @@ class InformacionEntidad implements ModelInterface, ArrayAccess
         'deuda_total' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'descripcion_entidad' => null,
         'clave_situacion' => null,
         'antiguedad' => null,
@@ -45,7 +45,7 @@ class InformacionEntidad implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'descripcion_entidad' => 'descripcionEntidad',
         'clave_situacion' => 'claveSituacion',
         'antiguedad' => 'antiguedad',
@@ -57,7 +57,7 @@ class InformacionEntidad implements ModelInterface, ArrayAccess
         'deuda_total' => 'deudaTotal'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'descripcion_entidad' => 'setDescripcionEntidad',
         'clave_situacion' => 'setClaveSituacion',
         'antiguedad' => 'setAntiguedad',
@@ -69,7 +69,7 @@ class InformacionEntidad implements ModelInterface, ArrayAccess
         'deuda_total' => 'setDeudaTotal'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'descripcion_entidad' => 'getDescripcionEntidad',
         'clave_situacion' => 'getClaveSituacion',
         'antiguedad' => 'getAntiguedad',
@@ -103,7 +103,7 @@ class InformacionEntidad implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,9 +9,9 @@ class IndicadoresSBS implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'IndicadoresSBS';
+    public static $rc_peModelName = 'IndicadoresSBS';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'deuda_directa' => 'float',
         'deuda_directa_morosa' => 'float',
         'deuda_indirecta' => 'float',
@@ -23,7 +23,7 @@ class IndicadoresSBS implements ModelInterface, ArrayAccess
         'entidad_mayor_deuda' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'deuda_directa' => 'float',
         'deuda_directa_morosa' => 'float',
         'deuda_indirecta' => 'float',
@@ -45,7 +45,7 @@ class IndicadoresSBS implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'deuda_directa' => 'deudaDirecta',
         'deuda_directa_morosa' => 'deudaDirectaMorosa',
         'deuda_indirecta' => 'deudaIndirecta',
@@ -57,7 +57,7 @@ class IndicadoresSBS implements ModelInterface, ArrayAccess
         'entidad_mayor_deuda' => 'entidadMayorDeuda'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'deuda_directa' => 'setDeudaDirecta',
         'deuda_directa_morosa' => 'setDeudaDirectaMorosa',
         'deuda_indirecta' => 'setDeudaIndirecta',
@@ -69,7 +69,7 @@ class IndicadoresSBS implements ModelInterface, ArrayAccess
         'entidad_mayor_deuda' => 'setEntidadMayorDeuda'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'deuda_directa' => 'getDeudaDirecta',
         'deuda_directa_morosa' => 'getDeudaDirectaMorosa',
         'deuda_indirecta' => 'getDeudaIndirecta',
@@ -103,7 +103,7 @@ class IndicadoresSBS implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,9 +9,9 @@ class Castigos implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Castigos';
+    public static $rc_peModelName = 'Castigos';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'descripcion_entidad' => 'string',
         'clave_estatus_pago' => 'string',
         'fecha_primer_castigo' => 'string',
@@ -19,7 +19,7 @@ class Castigos implements ModelInterface, ArrayAccess
         'monto_ultimo_castigo' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'descripcion_entidad' => null,
         'clave_estatus_pago' => null,
         'fecha_primer_castigo' => null,
@@ -37,7 +37,7 @@ class Castigos implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'descripcion_entidad' => 'descripcionEntidad',
         'clave_estatus_pago' => 'claveEstatusPago',
         'fecha_primer_castigo' => 'fechaPrimerCastigo',
@@ -45,7 +45,7 @@ class Castigos implements ModelInterface, ArrayAccess
         'monto_ultimo_castigo' => 'montoUltimoCastigo'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'descripcion_entidad' => 'setDescripcionEntidad',
         'clave_estatus_pago' => 'setClaveEstatusPago',
         'fecha_primer_castigo' => 'setFechaPrimerCastigo',
@@ -53,7 +53,7 @@ class Castigos implements ModelInterface, ArrayAccess
         'monto_ultimo_castigo' => 'setMontoUltimoCastigo'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'descripcion_entidad' => 'getDescripcionEntidad',
         'clave_estatus_pago' => 'getClaveEstatusPago',
         'fecha_primer_castigo' => 'getFechaPrimerCastigo',
@@ -83,7 +83,7 @@ class Castigos implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

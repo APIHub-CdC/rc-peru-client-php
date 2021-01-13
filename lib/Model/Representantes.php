@@ -9,9 +9,9 @@ class Representantes implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Representantes';
+    public static $rc_peModelName = 'Representantes';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_respuesta' => 'string',
         'fecha_reporte' => 'string',
         'documento_identidad' => 'string',
@@ -21,7 +21,7 @@ class Representantes implements ModelInterface, ArrayAccess
         'fecha_acta_representante' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_respuesta' => null,
         'fecha_reporte' => null,
         'documento_identidad' => null,
@@ -41,7 +41,7 @@ class Representantes implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_respuesta' => 'claveRespuesta',
         'fecha_reporte' => 'fechaReporte',
         'documento_identidad' => 'documentoIdentidad',
@@ -51,7 +51,7 @@ class Representantes implements ModelInterface, ArrayAccess
         'fecha_acta_representante' => 'fechaActaRepresentante'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_respuesta' => 'setClaveRespuesta',
         'fecha_reporte' => 'setFechaReporte',
         'documento_identidad' => 'setDocumentoIdentidad',
@@ -61,7 +61,7 @@ class Representantes implements ModelInterface, ArrayAccess
         'fecha_acta_representante' => 'setFechaActaRepresentante'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_respuesta' => 'getClaveRespuesta',
         'fecha_reporte' => 'getFechaReporte',
         'documento_identidad' => 'getDocumentoIdentidad',
@@ -93,7 +93,7 @@ class Representantes implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

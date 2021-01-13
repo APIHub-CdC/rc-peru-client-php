@@ -9,16 +9,16 @@ class DetalleEntidad implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleEntidad';
+    public static $rc_peModelName = 'DetalleEntidad';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_situacion' => 'string',
         'monto' => 'float',
         'fecha_vencimiento' => 'string',
         'fecha_reporte' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_situacion' => null,
         'monto' => 'float',
         'fecha_vencimiento' => null,
@@ -35,21 +35,21 @@ class DetalleEntidad implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_situacion' => 'claveSituacion',
         'monto' => 'monto',
         'fecha_vencimiento' => 'fechaVencimiento',
         'fecha_reporte' => 'fechaReporte'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_situacion' => 'setClaveSituacion',
         'monto' => 'setMonto',
         'fecha_vencimiento' => 'setFechaVencimiento',
         'fecha_reporte' => 'setFechaReporte'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_situacion' => 'getClaveSituacion',
         'monto' => 'getMonto',
         'fecha_vencimiento' => 'getFechaVencimiento',
@@ -78,7 +78,7 @@ class DetalleEntidad implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

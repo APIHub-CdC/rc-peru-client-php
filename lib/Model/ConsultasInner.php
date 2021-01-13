@@ -9,16 +9,16 @@ class ConsultasInner implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Consultas_inner';
+    public static $rc_peModelName = 'Consultas_inner';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_tipo_entidad' => 'string',
         'entidad' => 'string',
         'total_ultimos12_meses' => 'float',
         'consulta_mes' => '\rc\pe\Client\Model\ConsultaMes[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_tipo_entidad' => null,
         'entidad' => null,
         'total_ultimos12_meses' => null,
@@ -35,21 +35,21 @@ class ConsultasInner implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_tipo_entidad' => 'claveTipoEntidad',
         'entidad' => 'entidad',
         'total_ultimos12_meses' => 'totalUltimos12Meses',
         'consulta_mes' => 'consultaMes'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_tipo_entidad' => 'setClaveTipoEntidad',
         'entidad' => 'setEntidad',
         'total_ultimos12_meses' => 'setTotalUltimos12Meses',
         'consulta_mes' => 'setConsultaMes'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_tipo_entidad' => 'getClaveTipoEntidad',
         'entidad' => 'getEntidad',
         'total_ultimos12_meses' => 'getTotalUltimos12Meses',
@@ -78,7 +78,7 @@ class ConsultasInner implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {
