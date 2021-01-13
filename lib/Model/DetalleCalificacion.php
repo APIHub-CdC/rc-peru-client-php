@@ -9,15 +9,15 @@ class DetalleCalificacion implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleCalificacion';
+    public static $rc_peModelName = 'DetalleCalificacion';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'id_calificacion' => 'string',
         'porcentaje' => 'float',
         'monto' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'id_calificacion' => null,
         'porcentaje' => 'float',
         'monto' => 'float'
@@ -33,19 +33,19 @@ class DetalleCalificacion implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'id_calificacion' => 'idCalificacion',
         'porcentaje' => 'porcentaje',
         'monto' => 'monto'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'id_calificacion' => 'setIdCalificacion',
         'porcentaje' => 'setPorcentaje',
         'monto' => 'setMonto'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'id_calificacion' => 'getIdCalificacion',
         'porcentaje' => 'getPorcentaje',
         'monto' => 'getMonto'
@@ -73,7 +73,7 @@ class DetalleCalificacion implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

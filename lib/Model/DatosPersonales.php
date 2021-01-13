@@ -9,9 +9,9 @@ class DatosPersonales implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DatosPersonales';
+    public static $rc_peModelName = 'DatosPersonales';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'primer_nombre' => 'string',
         'segundo_nombre' => 'string',
         'apellido_paterno' => 'string',
@@ -36,7 +36,7 @@ class DatosPersonales implements ModelInterface, ArrayAccess
         'clave_tipo_empresa' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'primer_nombre' => null,
         'segundo_nombre' => null,
         'apellido_paterno' => null,
@@ -71,7 +71,7 @@ class DatosPersonales implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'primer_nombre' => 'primerNombre',
         'segundo_nombre' => 'segundoNombre',
         'apellido_paterno' => 'apellidoPaterno',
@@ -96,7 +96,7 @@ class DatosPersonales implements ModelInterface, ArrayAccess
         'clave_tipo_empresa' => 'claveTipoEmpresa'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'primer_nombre' => 'setPrimerNombre',
         'segundo_nombre' => 'setSegundoNombre',
         'apellido_paterno' => 'setApellidoPaterno',
@@ -121,7 +121,7 @@ class DatosPersonales implements ModelInterface, ArrayAccess
         'clave_tipo_empresa' => 'setClaveTipoEmpresa'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'primer_nombre' => 'getPrimerNombre',
         'segundo_nombre' => 'getSegundoNombre',
         'apellido_paterno' => 'getApellidoPaterno',
@@ -168,7 +168,7 @@ class DatosPersonales implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

@@ -9,9 +9,9 @@ class ComportamientoUsoTarjeta implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ComportamientoUsoTarjeta';
+    public static $rc_peModelName = 'ComportamientoUsoTarjeta';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_producto' => 'string',
         'descripcion_entidad' => 'string',
         'clave_situacion' => 'string',
@@ -30,7 +30,7 @@ class ComportamientoUsoTarjeta implements ModelInterface, ArrayAccess
         'maximo_fecha_linea_credito' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_producto' => null,
         'descripcion_entidad' => null,
         'clave_situacion' => null,
@@ -59,7 +59,7 @@ class ComportamientoUsoTarjeta implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_producto' => 'claveProducto',
         'descripcion_entidad' => 'descripcionEntidad',
         'clave_situacion' => 'claveSituacion',
@@ -78,7 +78,7 @@ class ComportamientoUsoTarjeta implements ModelInterface, ArrayAccess
         'maximo_fecha_linea_credito' => 'maximoFechaLineaCredito'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_producto' => 'setClaveProducto',
         'descripcion_entidad' => 'setDescripcionEntidad',
         'clave_situacion' => 'setClaveSituacion',
@@ -97,7 +97,7 @@ class ComportamientoUsoTarjeta implements ModelInterface, ArrayAccess
         'maximo_fecha_linea_credito' => 'setMaximoFechaLineaCredito'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_producto' => 'getClaveProducto',
         'descripcion_entidad' => 'getDescripcionEntidad',
         'clave_situacion' => 'getClaveSituacion',
@@ -138,7 +138,7 @@ class ComportamientoUsoTarjeta implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

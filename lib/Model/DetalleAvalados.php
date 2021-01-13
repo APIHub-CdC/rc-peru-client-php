@@ -9,9 +9,9 @@ class DetalleAvalados implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleAvalados';
+    public static $rc_peModelName = 'DetalleAvalados';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'periodo' => 'string',
         'id_calificacion' => 'string',
         'id_tipo_documento' => 'string',
@@ -21,7 +21,7 @@ class DetalleAvalados implements ModelInterface, ArrayAccess
         'saldo' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'periodo' => null,
         'id_calificacion' => null,
         'id_tipo_documento' => null,
@@ -41,7 +41,7 @@ class DetalleAvalados implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'periodo' => 'periodo',
         'id_calificacion' => 'idCalificacion',
         'id_tipo_documento' => 'idTipoDocumento',
@@ -51,7 +51,7 @@ class DetalleAvalados implements ModelInterface, ArrayAccess
         'saldo' => 'saldo'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'periodo' => 'setPeriodo',
         'id_calificacion' => 'setIdCalificacion',
         'id_tipo_documento' => 'setIdTipoDocumento',
@@ -61,7 +61,7 @@ class DetalleAvalados implements ModelInterface, ArrayAccess
         'saldo' => 'setSaldo'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'periodo' => 'getPeriodo',
         'id_calificacion' => 'getIdCalificacion',
         'id_tipo_documento' => 'getIdTipoDocumento',
@@ -93,7 +93,7 @@ class DetalleAvalados implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

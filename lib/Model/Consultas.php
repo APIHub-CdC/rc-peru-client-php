@@ -9,13 +9,13 @@ class Consultas implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Consultas';
+    public static $rc_peModelName = 'Consultas';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         
     ];
     
@@ -29,15 +29,15 @@ class Consultas implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         
     ];
     
-    protected static $setters = [
+    public static $setters = [
         
     ];
     
-    protected static $getters = [
+    public static $getters = [
         
     ];
     
@@ -63,7 +63,7 @@ class Consultas implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

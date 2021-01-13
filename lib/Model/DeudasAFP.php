@@ -9,9 +9,9 @@ class DeudasAFP implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DeudasAFP';
+    public static $rc_peModelName = 'DeudasAFP';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'descripcion_entidad' => 'string',
         'fecha_reporte' => 'string',
         'clave_tipo_deuda' => 'string',
@@ -22,7 +22,7 @@ class DeudasAFP implements ModelInterface, ArrayAccess
         'clave_situacion' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'descripcion_entidad' => null,
         'fecha_reporte' => null,
         'clave_tipo_deuda' => null,
@@ -43,7 +43,7 @@ class DeudasAFP implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'descripcion_entidad' => 'descripcionEntidad',
         'fecha_reporte' => 'fechaReporte',
         'clave_tipo_deuda' => 'claveTipoDeuda',
@@ -54,7 +54,7 @@ class DeudasAFP implements ModelInterface, ArrayAccess
         'clave_situacion' => 'claveSituacion'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'descripcion_entidad' => 'setDescripcionEntidad',
         'fecha_reporte' => 'setFechaReporte',
         'clave_tipo_deuda' => 'setClaveTipoDeuda',
@@ -65,7 +65,7 @@ class DeudasAFP implements ModelInterface, ArrayAccess
         'clave_situacion' => 'setClaveSituacion'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'descripcion_entidad' => 'getDescripcionEntidad',
         'fecha_reporte' => 'getFechaReporte',
         'clave_tipo_deuda' => 'getClaveTipoDeuda',
@@ -98,7 +98,7 @@ class DeudasAFP implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

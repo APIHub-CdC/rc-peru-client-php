@@ -9,9 +9,9 @@ class Direcciones implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Direcciones';
+    public static $rc_peModelName = 'Direcciones';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'fuente' => 'string',
         'ubigeo' => 'string',
         'departamento' => 'string',
@@ -26,7 +26,7 @@ class Direcciones implements ModelInterface, ArrayAccess
         'fecha_actualizaciont_sunat' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'fuente' => null,
         'ubigeo' => null,
         'departamento' => null,
@@ -51,7 +51,7 @@ class Direcciones implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'fuente' => 'fuente',
         'ubigeo' => 'ubigeo',
         'departamento' => 'departamento',
@@ -66,7 +66,7 @@ class Direcciones implements ModelInterface, ArrayAccess
         'fecha_actualizaciont_sunat' => 'fechaActualizaciontSunat'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'fuente' => 'setFuente',
         'ubigeo' => 'setUbigeo',
         'departamento' => 'setDepartamento',
@@ -81,7 +81,7 @@ class Direcciones implements ModelInterface, ArrayAccess
         'fecha_actualizaciont_sunat' => 'setFechaActualizaciontSunat'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'fuente' => 'getFuente',
         'ubigeo' => 'getUbigeo',
         'departamento' => 'getDepartamento',
@@ -118,7 +118,7 @@ class Direcciones implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

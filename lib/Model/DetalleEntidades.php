@@ -9,9 +9,9 @@ class DetalleEntidades implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleEntidades';
+    public static $rc_peModelName = 'DetalleEntidades';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'nombre_entidad' => 'string',
         'id_calificacion_entidad' => 'string',
         'porcentaje_calificacion' => 'float',
@@ -24,7 +24,7 @@ class DetalleEntidades implements ModelInterface, ArrayAccess
         'detalle_castigo' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'nombre_entidad' => null,
         'id_calificacion_entidad' => null,
         'porcentaje_calificacion' => 'float',
@@ -47,7 +47,7 @@ class DetalleEntidades implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'nombre_entidad' => 'nombreEntidad',
         'id_calificacion_entidad' => 'idCalificacionEntidad',
         'porcentaje_calificacion' => 'porcentajeCalificacion',
@@ -60,7 +60,7 @@ class DetalleEntidades implements ModelInterface, ArrayAccess
         'detalle_castigo' => 'detalleCastigo'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'nombre_entidad' => 'setNombreEntidad',
         'id_calificacion_entidad' => 'setIdCalificacionEntidad',
         'porcentaje_calificacion' => 'setPorcentajeCalificacion',
@@ -73,7 +73,7 @@ class DetalleEntidades implements ModelInterface, ArrayAccess
         'detalle_castigo' => 'setDetalleCastigo'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'nombre_entidad' => 'getNombreEntidad',
         'id_calificacion_entidad' => 'getIdCalificacionEntidad',
         'porcentaje_calificacion' => 'getPorcentajeCalificacion',
@@ -108,7 +108,7 @@ class DetalleEntidades implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

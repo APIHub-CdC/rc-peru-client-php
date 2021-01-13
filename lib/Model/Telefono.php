@@ -9,16 +9,16 @@ class Telefono implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Telefono';
+    public static $rc_peModelName = 'Telefono';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'fuente' => 'string',
         'telefono' => 'string',
         'codigo' => 'string',
         'fecha_actualizacion' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'fuente' => null,
         'telefono' => null,
         'codigo' => null,
@@ -35,21 +35,21 @@ class Telefono implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'fuente' => 'fuente',
         'telefono' => 'telefono',
         'codigo' => 'codigo',
         'fecha_actualizacion' => 'fechaActualizacion'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'fuente' => 'setFuente',
         'telefono' => 'setTelefono',
         'codigo' => 'setCodigo',
         'fecha_actualizacion' => 'setFechaActualizacion'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'fuente' => 'getFuente',
         'telefono' => 'getTelefono',
         'codigo' => 'getCodigo',
@@ -78,7 +78,7 @@ class Telefono implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

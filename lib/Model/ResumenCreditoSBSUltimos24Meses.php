@@ -9,15 +9,15 @@ class ResumenCreditoSBSUltimos24Meses implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'ResumenCredito_SBSUltimos24Meses';
+    public static $rc_peModelName = 'ResumenCredito_SBSUltimos24Meses';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'condicion24_meses' => '\rc\pe\Client\Model\Condicion24Meses[]',
         'calificacion24_meses' => '\rc\pe\Client\Model\Calificacion24Meses[]',
         'situacion24_meses' => '\rc\pe\Client\Model\Situacion24Meses[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'condicion24_meses' => null,
         'calificacion24_meses' => null,
         'situacion24_meses' => null
@@ -33,19 +33,19 @@ class ResumenCreditoSBSUltimos24Meses implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'condicion24_meses' => 'condicion24Meses',
         'calificacion24_meses' => 'calificacion24Meses',
         'situacion24_meses' => 'situacion24Meses'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'condicion24_meses' => 'setCondicion24Meses',
         'calificacion24_meses' => 'setCalificacion24Meses',
         'situacion24_meses' => 'setSituacion24Meses'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'condicion24_meses' => 'getCondicion24Meses',
         'calificacion24_meses' => 'getCalificacion24Meses',
         'situacion24_meses' => 'getSituacion24Meses'
@@ -73,7 +73,7 @@ class ResumenCreditoSBSUltimos24Meses implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

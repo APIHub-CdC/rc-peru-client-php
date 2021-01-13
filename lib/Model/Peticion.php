@@ -9,15 +9,15 @@ class Peticion implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'Peticion';
+    public static $rc_peModelName = 'Peticion';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'folio' => 'string',
         'tipo_documento' => 'string',
         'numero_documento' => 'string'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'folio' => null,
         'tipo_documento' => null,
         'numero_documento' => null
@@ -33,19 +33,19 @@ class Peticion implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'folio' => 'folio',
         'tipo_documento' => 'tipoDocumento',
         'numero_documento' => 'numeroDocumento'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'folio' => 'setFolio',
         'tipo_documento' => 'setTipoDocumento',
         'numero_documento' => 'setNumeroDocumento'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'folio' => 'getFolio',
         'tipo_documento' => 'getTipoDocumento',
         'numero_documento' => 'getNumeroDocumento'
@@ -73,7 +73,7 @@ class Peticion implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

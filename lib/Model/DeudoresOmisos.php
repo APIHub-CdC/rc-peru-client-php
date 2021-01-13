@@ -9,9 +9,9 @@ class DeudoresOmisos implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DeudoresOmisos';
+    public static $rc_peModelName = 'DeudoresOmisos';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'tipo' => 'string',
         'periodo' => 'string',
         'clave_situacion' => 'string',
@@ -20,7 +20,7 @@ class DeudoresOmisos implements ModelInterface, ArrayAccess
         'monto_deuda' => 'float'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'tipo' => null,
         'periodo' => null,
         'clave_situacion' => null,
@@ -39,7 +39,7 @@ class DeudoresOmisos implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'tipo' => 'tipo',
         'periodo' => 'periodo',
         'clave_situacion' => 'claveSituacion',
@@ -48,7 +48,7 @@ class DeudoresOmisos implements ModelInterface, ArrayAccess
         'monto_deuda' => 'montoDeuda'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'tipo' => 'setTipo',
         'periodo' => 'setPeriodo',
         'clave_situacion' => 'setClaveSituacion',
@@ -57,7 +57,7 @@ class DeudoresOmisos implements ModelInterface, ArrayAccess
         'monto_deuda' => 'setMontoDeuda'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'tipo' => 'getTipo',
         'periodo' => 'getPeriodo',
         'clave_situacion' => 'getClaveSituacion',
@@ -88,7 +88,7 @@ class DeudoresOmisos implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

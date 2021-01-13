@@ -9,9 +9,9 @@ class DetalleCreditosMFNZ implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleCreditosMFNZ';
+    public static $rc_peModelName = 'DetalleCreditosMFNZ';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'periodo' => 'string',
         'entidades' => 'float',
         'id_peor_calificacion' => 'string',
@@ -26,7 +26,7 @@ class DetalleCreditosMFNZ implements ModelInterface, ArrayAccess
         'detalle_entidades' => '\rc\pe\Client\Model\DetalleEntidades[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'periodo' => null,
         'entidades' => null,
         'id_peor_calificacion' => null,
@@ -51,7 +51,7 @@ class DetalleCreditosMFNZ implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'periodo' => 'periodo',
         'entidades' => 'entidades',
         'id_peor_calificacion' => 'idPeorCalificacion',
@@ -66,7 +66,7 @@ class DetalleCreditosMFNZ implements ModelInterface, ArrayAccess
         'detalle_entidades' => 'detalleEntidades'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'periodo' => 'setPeriodo',
         'entidades' => 'setEntidades',
         'id_peor_calificacion' => 'setIdPeorCalificacion',
@@ -81,7 +81,7 @@ class DetalleCreditosMFNZ implements ModelInterface, ArrayAccess
         'detalle_entidades' => 'setDetalleEntidades'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'periodo' => 'getPeriodo',
         'entidades' => 'getEntidades',
         'id_peor_calificacion' => 'getIdPeorCalificacion',
@@ -118,7 +118,7 @@ class DetalleCreditosMFNZ implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {

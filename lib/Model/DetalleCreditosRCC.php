@@ -9,9 +9,9 @@ class DetalleCreditosRCC implements ModelInterface, ArrayAccess
 {
     const DISCRIMINATOR = null;
     
-    protected static $rc_peModelName = 'DetalleCreditosRCC';
+    public static $rc_peModelName = 'DetalleCreditosRCC';
     
-    protected static $rc_peTypes = [
+    public static $rc_peTypes = [
         'clave_mes' => 'string',
         'numero_entidades' => 'float',
         'id_peor_calificacion' => 'string',
@@ -26,7 +26,7 @@ class DetalleCreditosRCC implements ModelInterface, ArrayAccess
         'entidades' => '\rc\pe\Client\Model\Entidades[]'
     ];
     
-    protected static $rc_peFormats = [
+    public static $rc_peFormats = [
         'clave_mes' => null,
         'numero_entidades' => null,
         'id_peor_calificacion' => null,
@@ -51,7 +51,7 @@ class DetalleCreditosRCC implements ModelInterface, ArrayAccess
         return self::$rc_peFormats;
     }
     
-    protected static $attributeMap = [
+    public static $attributeMap = [
         'clave_mes' => 'claveMes',
         'numero_entidades' => 'numeroEntidades',
         'id_peor_calificacion' => 'idPeorCalificacion',
@@ -66,7 +66,7 @@ class DetalleCreditosRCC implements ModelInterface, ArrayAccess
         'entidades' => 'entidades'
     ];
     
-    protected static $setters = [
+    public static $setters = [
         'clave_mes' => 'setClaveMes',
         'numero_entidades' => 'setNumeroEntidades',
         'id_peor_calificacion' => 'setIdPeorCalificacion',
@@ -81,7 +81,7 @@ class DetalleCreditosRCC implements ModelInterface, ArrayAccess
         'entidades' => 'setEntidades'
     ];
     
-    protected static $getters = [
+    public static $getters = [
         'clave_mes' => 'getClaveMes',
         'numero_entidades' => 'getNumeroEntidades',
         'id_peor_calificacion' => 'getIdPeorCalificacion',
@@ -118,7 +118,7 @@ class DetalleCreditosRCC implements ModelInterface, ArrayAccess
     
     
     
-    protected $container = [];
+    public $container = [];
     
     public function __construct(array $data = null)
     {
